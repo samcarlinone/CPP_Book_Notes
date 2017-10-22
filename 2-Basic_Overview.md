@@ -2,13 +2,13 @@ _(The C++ Programming Language Chapter 2, ed. 4, by Bjarne Stroustrup)_
 
 sizeof(type) - returns number of bytes for type size
 
--
+---
 
 Assignment `int i1 = 7.2;` (cast) `int i2 {7.2}` (error)
 
 _can use `=` and `{}` together, but it is redundant to do so_
 
--
+---
 
 `auto` infers type, use with `=`
 ```c++
@@ -19,14 +19,14 @@ auto d = 1.2; // a double
 auto z = sqrt(y); // z has the type of whatever sqr t(y) returns
 ```
 
--
+---
 
 `const` value will not be changed, compiler enforced
 
 `constexpr` evaluated at compile time, will not change
 - _functions can only be used with this if they are also declared with `constexpr` and consist of a simple return statement_
 
--
+---
 
 `<<` output operator, puts right side into left
 
@@ -52,7 +52,7 @@ switch (answer) {
 }
 ```
 
--
+---
 
 `*` = "contents of"
 
@@ -65,7 +65,7 @@ char* p = &v[3]; //p points to v's fourth elem
 char x = *p; //*p is the object the p points to
 ```
 
--
+---
 
 ```c++
 //Ranged for-loops
@@ -89,7 +89,7 @@ T& r; // T&: reference to T (§7.7)
 T f(A); // T(A): function taking an argument of type A returning a result of type T (§2.2.1)
 ```
 
--
+---
 
 ```c++
 nullptr // Represents nullptr
@@ -227,7 +227,7 @@ int Vector::siz e()
 }
 ```
 
--
+---
 
 `namespaces`
 
@@ -255,7 +255,7 @@ int main()
 }
 ```
 
--
+---
 
 ### Exceptions
 ```c++
@@ -263,11 +263,9 @@ throw out_of_range{"Vector::operator[]"};
 ```
 note that out_of_range is specified in the standard library
 
--
+---
 
 `static_assert` throws an error at compile time if condition not met
 ```c++
 static_assert(4<=sizeof(int), "integers are too small"); // check integer size
 ```
-
--

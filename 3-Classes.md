@@ -31,7 +31,7 @@ Functions defined in class are inlined by default
 __Pass by value functions automatically copy objects__
 
 
--
+---
 
 ##### Destructors
 ```c++
